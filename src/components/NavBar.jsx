@@ -11,9 +11,9 @@ const NavBar = () => {
     <div>
         <nav className='relative px-6 py-6'>
 
-          <a href="#">
+          <Link className='inline-block' href='#'>
             <img src="nav-logo.svg" alt="" />
-          </a>
+          </Link>
 
           <ul className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex gap-x-24'>  {/* transform: translate(?); */}
             <li><Link className={x==="/" ? "text-sm text-green-600 font-bold" : "text-sm text-gray-400 hover:text-gray-500 "} href={"/"}>Start</Link></li>

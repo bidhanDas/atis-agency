@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const NavBar = () => {
 
-  const x = usePathname();
+  const x = usePathname(); //ar jonno client component korte hoise...
 
   return (
     <div>

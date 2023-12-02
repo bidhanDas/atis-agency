@@ -11,7 +11,7 @@ const NavBar = () => {
     <div>
         <nav className='relative px-6 py-6'>
 
-          <Link className='inline-block' href='#'>
+          <Link className='inline-block' href='/'>
             <img src="nav-logo.svg" alt="" />
           </Link>
 

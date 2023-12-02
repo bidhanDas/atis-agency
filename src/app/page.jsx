@@ -1,3 +1,4 @@
+import Brands from '@/components/Brands'
 import Contact from '@/components/Contact'
 import Hero from '@/components/Hero'
 import HowWorks from '@/components/HowWorks'
@@ -13,6 +14,7 @@ const page = () => {
       <HowWorks></HowWorks>
       <Projects></Projects>
       <Contact></Contact>
+      <Brands></Brands>
     </div>
   )
 }

@@ -46,17 +46,17 @@ const Contact = () => {
   return (
     <div>
         <section className='bg-gray-50 py-20'>
-            <div className='max-w-container mx-auto px-4'>
-                <div className='flex items-center justify-center -mx-4'>
+            <div className='max-w-container m-auto px-2.5'>
+                <div className='sm:flex items-center justify-center -mx-4'>
 
-                    <div className='w-1/2 px-4'>
+                    <div className='sm:w-1/2 px-4'>
                         <Link className='mb-6 inline-block' href='#'><img src="/contact-logo.svg" alt="" /></Link>
                         <p className='mb-4 text-5xl font-bold leading-normal'>So much more than a business analytics tool</p>
                         <p className='mb-8 text-gray-500 leading-loose'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
-                        <Link className='inline-block py-3 px-6  bg-green-600 hover:bg-green-700 text-white font-semibold rounded-l-xl rounded-t-xl duration-200' href='#'>Get Started</Link>
+                        <Link className='inline-block py-3 px-6  bg-green-600 hover:bg-green-700 text-white font-semibold rounded-l-xl rounded-t-xl duration-200 ease-in-out' href='#'>Get Started</Link>
                     </div>
 
-                    <div className='w-1/2 px-4'>
+                    <div className='sm:w-1/2 px-4'>
                         <form onSubmit={handleSubmit} action="" className='max-w-sm ml-auto mb-6 py-[34px] px-6 bg-white shadow rounded-t-3xl rounded-bl-3xl text-center'>
                             <p className='text-sm text-gray-400 mb-1'>Sign Up</p>
                             <p className='text-2xl mb-[26px]'>Create an account</p>
@@ -70,7 +70,7 @@ const Contact = () => {
                             </div>
                             <input onChange={handleEmail} className="mb-4 py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="email" placeholder="hello@example.com"/>
                             <textarea onChange={handleMessage} className="mb-[17px] py-2 px-3 w-full bg-gray-50 rounded leading-loose" placeholder="Message"/>
-                            <button type="submit" className="mb-4 py-4 w-full rounded-md text-sm bg-green-600 hover:bg-green-700 text-white font-semibold leading-normal duration-200">Send</button>
+                            <button type="submit" className="mb-4 py-4 w-full rounded-md text-sm bg-green-600 hover:bg-green-700 text-white font-semibold leading-normal duration-200 ease-in-out">Send</button>
                         </form>                     
                     </div>
                 </div>

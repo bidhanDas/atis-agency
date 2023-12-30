@@ -9,17 +9,17 @@ const Team = async () => {
     const data = await getData();
   return (
     <section className='py-20 bg-gray-50'>
-        <div className='max-w-container mx-auto px-4'>
+        <div className='max-w-container m-auto px-2.5'>
             <div className='max-w-xl mx-auto text-center mb-16'>
                 <p className='text-green-600 font-bold'>Dolor sit amet consectutar</p>
                 <p className='text-5xl font-bold leading-normal'>Check our awesome team members</p>
             </div>
 
-            <div className='flex flex-wrap -mx-4'>
+            <div className='sm:flex sm:flex-wrap -mx-4'>
                 {
                     data.map((item)=>{
                         return (
-                            <div className='mb-6 w-1/2 px-4'>
+                            <div className='mb-6 sm:w-1/2 px-4'>
                                 <div className='flex flex-wrap items-center bg-white rounded shadow'>
                                     <div className='w-1/3'>
                                         <img src={item.image} alt="" className='h-80 object-cover' />

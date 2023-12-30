@@ -10,14 +10,14 @@ const HowWorks = async () => {
   return (
     <div>
         <section className='bg-gray-50 py-20'>
-            <div className='max-w-container mx-auto px-4'>
+            <div className='max-w-container m-auto px-2.5'>
 
                 <div className='mb-16 max-w-md text-center mx-auto '>
                     <p className='text-green-600 font-bold'>Dolor sit amet consectutar</p>
                     <p className='text-5xl font-bold leading-[72px]'>Build & Launch without problems</p>
                 </div>
 
-                <div className='flex -mx-4'>
+                <div className='sm:flex -mx-4'>
                     {
                         data.map((item)=>{
                             return (

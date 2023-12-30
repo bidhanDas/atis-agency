@@ -10,7 +10,7 @@ const Brands = async () => {
   return (
     <div>
         <section className='py-20'>
-            <div className='max-w-container mx-auto px-4 text-center'>
+            <div className='max-w-container m-auto px-2.5 text-center'>
                 <p className='mb-16 text-2xl'>Trusted by brands all over the world</p>
                 <div className='flex -mx-2'>
                     {

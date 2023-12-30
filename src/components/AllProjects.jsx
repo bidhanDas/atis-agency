@@ -9,7 +9,7 @@ const AllProjects = async () => {
     const data = await getData();
   return (
     <section className='py-20 bg-gray-50'>
-        <div className='max-w-container mx-auto px-4'>
+        <div className='max-w-container m-auto px-2.5'>
 
             <div className='mb-16 flex justify-center items-center'>
                 <div className='text-center'>
@@ -18,11 +18,11 @@ const AllProjects = async () => {
                 </div>
             </div>
 
-            <div className='flex flex-wrap -mx-4 mb-4'>
+            <div className='sm:flex sm:flex-wrap -mx-4 mb-4'>
                 {
                     data.map((item)=>{
                         return(
-                            <div className='w-1/3 mb-8 px-4'>
+                            <div className='sm:w-1/3 mb-8 px-4'>
                                 <img src={item.image} alt="" className='h-80 object-cover rounded' />
                             </div>
                         );

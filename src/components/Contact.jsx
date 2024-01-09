@@ -39,6 +39,7 @@ const Contact = () => {
             toast.error('Message Required');
         } else {
             const x = await axios.post('/api/contact',{fname:firstName,lname:lastName,email:email,msg:message}); //object
+            toast.success('Done!');
 
         }
     }

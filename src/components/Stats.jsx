@@ -10,7 +10,7 @@ const Stats = async () => {
   return (
     <div>
         <section className='py-20'>
-            <div className='max-w-container m-auto px-2.5'>
+            <div className='max-w-container m-auto px-2'>
                 <div className='flex'>
 
                     <div className='mb-8 w-1/4 text-center'>

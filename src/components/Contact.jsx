@@ -46,12 +46,12 @@ const Contact = () => {
 
   return (
     <div>
-        <section className='bg-gray-50 py-20'>
-            <div className='max-w-container m-auto px-2.5'>
+        <section id='contact' className='bg-gray-50 py-20'>
+            <div className='max-w-container m-auto px-2'>
                 <div className='sm:flex items-center justify-center -mx-4'>
 
                     <div className='sm:w-1/2 px-4'>
-                        <Link className='mb-6 inline-block' href='#'><img src="/contact-logo.svg" alt="" /></Link>
+                        <Link className='mb-6 inline-block' href='/'><img src="/contact-logo.svg" alt="" /></Link>
                         <p className='mb-4 text-5xl font-bold leading-normal'>So much more than a business analytics tool</p>
                         <p className='mb-8 text-gray-500 leading-loose'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
                         <Link className='inline-block py-3 px-6  bg-green-600 hover:bg-green-700 text-white font-semibold rounded-l-xl rounded-t-xl duration-200 ease-in-out' href='#'>Get Started</Link>

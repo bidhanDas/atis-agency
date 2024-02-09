@@ -11,7 +11,7 @@ const Projects = async () => {
   return (
     <div>
         <section className='bg-gray-50 py-20'>
-            <div className='max-w-container m-auto px-2.5'>
+            <div className='max-w-container m-auto px-2'>
 
                 <div className='mb-16 flex justify-between items-center'>
                     <div>

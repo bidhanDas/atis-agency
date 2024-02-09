@@ -11,7 +11,7 @@ const Hero = async () => {
   return (
     <div>
         <section className='bg-gray-50 py-24'>
-            <div className='max-w-container m-auto px-2.5'>
+            <div className='max-w-container m-auto px-2'>
                 <div className='lg:flex'> 
                     <div className='lg:w-1/2 flex items-center'>
                         <div> {/* column wise */}

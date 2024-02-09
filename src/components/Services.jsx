@@ -13,7 +13,7 @@ const Services = async () => {
             data.map((item)=>{
                 return(
                     <div className='py-20 bg-gray-50'>
-                        <div className='max-w-container m-auto px-2.5'>
+                        <div className='max-w-container m-auto px-2'>
                             <div className='sm:flex items-center -mx-4'>
 
                                 <div className='sm:w-1/2 px-4'>
@@ -27,7 +27,7 @@ const Services = async () => {
                                 </div>
 
                                 <div className='sm:w-1/2'>
-                                    <div className='mb-4 flex flex-wrap items-end'>
+                                    <div className='mb-4 flex items-end'>
                                         <div className='w-2/3 px-3'>
                                             <img src={item.image1} alt="" className='w-full h-48 object-cover rounded' />
                                         </div>
@@ -35,7 +35,7 @@ const Services = async () => {
                                             <img src={item.image2} alt="" className='w-full h-32 object-cover rounded' />
                                         </div>
                                     </div>
-                                    <div className='flex flex-wrap items-start'>
+                                    <div className='flex items-start'>
                                         <div className='w-1/3 px-3'>
                                             <img src={item.image3} alt="" className='w-full h-32 object-cover rounded' />
                                         </div>

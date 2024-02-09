@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <section className='py-20 bg-gray-900'>
-        <div className='max-w-container m-auto px-2.5'>
+        <div className='max-w-container m-auto px-2'>
             <div className='pb-12 md:flex items-center justify-between border-b border-gray-800'>
                 <div>
                     <Link className='inline-block' href='/'>
@@ -14,11 +14,11 @@ const Footer = () => {
 
                 <div>
                     <ul className='md:flex gap-x-20 items-center'>
-                        <li><Link className='text-sm text-gray-400 hover:text-gray-600' href={'/'}>Start</Link></li>
-                        <li><Link className='text-sm text-gray-400 hover:text-gray-600' href={"/team"}>Team</Link></li>
-                        <li><Link className='text-sm text-gray-400 hover:text-gray-600' href={"/services"}>Services</Link></li>
-                        <li><Link className='text-sm text-gray-400 hover:text-gray-600' href={"/projects"}>Projects</Link></li>
-                        <li><Link className='text-sm text-gray-400 hover:text-gray-600' href={"/testimonials"}>Testimonials</Link></li>
+                        <Link href={'/'}><li className='text-sm text-gray-400 hover:text-gray-600'>Start</li></Link>
+                        <Link href={"/team"}><li className='text-sm text-gray-400 hover:text-gray-600'>Team</li></Link>
+                        <Link href={"/services"}><li className='text-sm text-gray-400 hover:text-gray-600'>Services</li></Link>
+                        <Link href={"/projects"}><li className='text-sm text-gray-400 hover:text-gray-600'>Projects</li></Link>
+                        <Link href={"/testimonials"}><li className='text-sm text-gray-400 hover:text-gray-600'>Testimonials</li></Link>
                     </ul>
                 </div>
             </div>

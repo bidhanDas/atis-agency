@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer';
 import './globals.css';
 import NavBar from "@/components/NavBar";
+// import NextTopLoader from 'nextjs-toploader';
 
 export async function generateMetadata(){
   const res=await fetch("https://agency.teamrabbil.com/api/SiteMeta/home");
@@ -35,6 +36,8 @@ export default function RootLayout({ children }) {
       </head>
 
       <body>
+        {/* <NextTopLoader color="#E60000" height={2} speed={400}></NextTopLoader>  */}
+        {/*search nextjs-toploader, documentation, NPMJS*/}
         <NavBar></NavBar>
         {children}
         <Footer></Footer>

@@ -6,6 +6,8 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
 
+    const EmailRegx = /\S+@\S+\.\S+/;
+
     const [firstName,setFirstName] = useState('');
     const handleFirstName = (e) => {
         setFirstName(e.target.value);
@@ -33,13 +35,17 @@ const Contact = () => {
             toast.error('First Name Required');
         } else if (lastName == '') {
             toast.error('Last Name Required');
-        } else if (email == '') {
+        } else if (email == '' || !EmailRegx.test(email)) {  //not
             toast.error('Email Required');
         } else if (message == '') {
             toast.error('Message Required');
         } else {
             const x = await axios.post('/api/contact',{fname:firstName,lname:lastName,email:email,msg:message}); //object
-            toast.success('Done!');
+            setFirstName("");
+            setLastName("");
+            setEmail("");
+            setMessage("");
+            toast.success('Request Success');
 
         }
     }
@@ -63,14 +69,14 @@ const Contact = () => {
                             <p className='text-2xl mb-[26px]'>Create an account</p>
                             <div className='mb-4 flex -mx-2'>
                                 <div className='w-1/2 px-2'>
-                                    <input onChange={handleFirstName} type="text" placeholder="First Name" className='py-2 px-3 w-full bg-gray-50 rounded leading-loose' />
+                                    <input value={firstName} onChange={handleFirstName} type="text" placeholder="First Name" className='py-2 px-3 w-full bg-gray-50 rounded leading-loose' />
                                 </div>
                                 <div className='w-1/2 px-2'>
-                                    <input onChange={handleLastName} type="text" placeholder="Last Name" className='py-2 px-3 w-full bg-gray-50 rounded leading-loose' />
+                                    <input value={lastName} onChange={handleLastName} type="text" placeholder="Last Name" className='py-2 px-3 w-full bg-gray-50 rounded leading-loose' />
                                 </div>
                             </div>
-                            <input onChange={handleEmail} className="mb-4 py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="email" placeholder="hello@example.com"/>
-                            <textarea onChange={handleMessage} className="mb-[17px] py-2 px-3 w-full bg-gray-50 rounded leading-loose" placeholder="Message"/>
+                            <input value={email} onChange={handleEmail} className="mb-4 py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="email"  placeholder="hello@example.com"/> {/* type="email" */}
+                            <textarea value={message} onChange={handleMessage} className="mb-[17px] py-2 px-3 w-full bg-gray-50 rounded leading-loose" placeholder="Message"/>
                             <button type="submit" className="mb-4 py-4 w-full rounded-md text-sm bg-green-600 hover:bg-green-700 text-white font-semibold leading-normal duration-200 ease-in-out">Send</button>
                         </form>                     
                     </div>

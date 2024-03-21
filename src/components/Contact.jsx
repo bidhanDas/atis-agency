@@ -1,5 +1,4 @@
 "use client";
-import axios from 'axios';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
@@ -40,12 +39,18 @@ const Contact = () => {
         } else if (message == '') {
             toast.error('Message Required');
         } else {
-            const x = await axios.post('/api/contact',{fname:firstName,lname:lastName,email:email,msg:message}); //object
+
+            // axios diye sudhu post hoy response return ase na
+
+            const options={method:'POST', body:JSON.stringify({fname:firstName,lname:lastName,email:email,msg:message})}
+            let res=await (await fetch("/api/contact",options)).json();
+
             setFirstName("");
             setLastName("");
             setEmail("");
             setMessage("");
-            toast.success('Request Success');
+
+            res.status==="success" ? (toast.success('Request Success!')) : (toast.error("Request Fail!"));
 
         }
     }
